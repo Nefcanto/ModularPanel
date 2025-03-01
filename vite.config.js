@@ -43,9 +43,6 @@ export default defineConfig(({ mode }) => {
         ],
         server: {
             host: "0.0.0.0",
-            hmr: {
-                clientPort: 443
-            },
             allowedHosts: true
         },
         build: {
