@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@plugin "tailwind-scrollbar";
+@config "../tailwind.config.js";
+
+/* @layer base {
+    ul,
+    ol {
+        margin: revert;
+        padding: revert;
+    }
+} */
+
+@utility link {
+    @apply underline text-blue-600 cursor-pointer
+}
+
+@utility linkhover {
+    @apply text-blue-800
+}
+
+@utility linkvisited {
+    @apply text-purple-600
+}
+
+@utility a4-paper {
+    @apply w-[793.701px] h-[1122.519px];
+}
+
+@utility letter-paper {
+    @apply w-[816px] h-[1056px];
+}
+
+@utility legal-paper {
+    @apply w-[816px] h-[1344px];
+}
+
+@utility a5-paper {
+    @apply w-[559.055px] h-[793.701px];
+}
+
+@utility a3-paper {
+    @apply w-[1122.519px] h-[1587.402px];
+}
+
+@utility tabloid-paper {
+    @apply w-[1056px] h-[1632px];
+}
+
+@utility b5-paper {
+    @apply w-[661.417px] h-[944.882px];
+}
+
+@utility executive-paper {
+    @apply w-[696px] h-[1008px];
+}
+
+@utility tabloid-extra-paper {
+    @apply w-[1152px] h-[1728px];
+}
+
+@media print {
+
+    @page {
+        margin: 0;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    body.print .non-printable {
+        display: none !important;
+    }
+
+    body.print .print-reset {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    body.print .printable {
+        display: block !important;
+    }
+}
+
+@layer base {
+
+    /* WebKit-based browsers (Chrome, Edge, Safari) */
+    ::-webkit-scrollbar {
+        @apply w-1 h-1;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-gray-200 rounded;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-gray-500 rounded;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-700;
+    }
+
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: theme(colors.gray.500) theme(colors.gray.200);
+    }
+}
