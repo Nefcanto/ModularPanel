@@ -1,20 +1,7 @@
 {
     "IsDeveloping": true,
-    "StorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=holismdevelopment;AccountKey=CBiVBvJP/4RXpSbgftOMGLGkBDQAYPjEzlv3OJjoomAhEKYDrFzbvElmGN3IO/kbcY50ZogrxLFuunjakPxkUg==;EndpointSuffix=core.windows.net",
-    "Database": {
-        "Host": "database",
-        "User": "FaMHJGecNag5DKryCH9d",
-        "Password": "IC1joYMLZTT0fQMJ5qcz"
-    },
-    "DatabaseServer": "database",
-    "DatabaseUser": "root",
-    "DatabasePassword": "IC1joYMLZTT0fQMJ5qcz",
     "AccountsUrl": "https://accounts.pydr.ir",
     "AccountsRealm": "Development",
     "AccountsClient": "Panel",
-    "SiteUrl": "https://holism.local",
-    "FlattenRelatedItems": false,
-    "OtpLength": 6,
-    "NewPanel": true,
-    "ChangeLogEnabled": false
+    "SiteUrl": "https://holism.local"
 }
