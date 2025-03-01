@@ -30,6 +30,18 @@ const bundles = findBundles(parts)
 
 export default defineConfig(({ mode }) => {
 
+    function inspect() {
+        return {
+            name: "vite-plugin-inspect",
+            enforce: "pre",
+            transform(css, id) {
+                if (id.endsWith(".css")) {
+                    console.log(css)
+                }
+            },
+        }
+    }
+
     return {
         resolve: {
             alias: aliases,
@@ -39,6 +51,7 @@ export default defineConfig(({ mode }) => {
             react(),
             addPartAndType(),
             tailwindcss(),
+            inspect(),
             svgr()
         ],
         server: {
