@@ -81,29 +81,3 @@
         display: block !important;
     }
 }
-
-@layer base {
-
-    /* WebKit-based browsers (Chrome, Edge, Safari) */
-    ::-webkit-scrollbar {
-        @apply w-1 h-1;
-    }
-
-    ::-webkit-scrollbar-track {
-        @apply bg-gray-200 rounded;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        @apply bg-gray-500 rounded;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        @apply bg-gray-700;
-    }
-
-    /* Firefox */
-    * {
-        scrollbar-width: thin;
-        scrollbar-color: theme(colors.gray.500) theme(colors.gray.200);
-    }
-}
